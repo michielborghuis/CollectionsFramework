@@ -1,11 +1,11 @@
 package collectionsFramework;
 import java.lang.*;
 
-public class alphSort {
+public class AlphSort {
     private String[] str;
     private String temp;
 
-    public alphSort(String[] str) {
+    public AlphSort(String[] str) {
         this.str = str;
     }
 
