@@ -12,13 +12,13 @@ public class RandomLetterCreator {
         this.alphabet = alphabet;
     }
 
-    public char[] createArray(){
+    public String[] createArray(){
         for (int i = 0; i < len; i++){
             int randI = new Random().nextInt(alphabet.length());
             char randChar = alphabet.charAt(randI);
             b.append(randChar);
         }
-        return b.toString().toCharArray();
+        return b.toString().split("(?<!^)");
     }
 
 }
